@@ -51,7 +51,7 @@ El sistema puede ser compilado de 3 formas según la disposición de la Unidad d
 
 
 #### **Antes de continuar con el uso del sistema**
-El modelo BERT y el Conjunto de datos de ingles son demasiado pesados y exceden el limite de Github, para poder acceder a ellos se debe de descargar a traves del [Drive] (https://drive.google.com/drive/folders/1YETggXq6dmKntJ3zl3eJo1flbcncPB3J?usp=sharing), una vez descargados los archivos deben de ser colocados dentro de la siguiente ruta "sentiment_analysis\primaryapp\dentro de esta carpeta va el archivo."
+Tanto los modelos entrenados como los conjuntos de datos de entrenamiento y validación son demasiado pesados y exceden el limite de Github, para poder acceder a ellos se deben de descargar a traves del [Drive] (https://drive.google.com/drive/folders/1YETggXq6dmKntJ3zl3eJo1flbcncPB3J?usp=sharing), una vez descargados los archivos deben de ser colocados dentro de la siguiente ruta "sentiment_analysis\primaryapp\dentro de esta carpeta va el archivo."
 
 
 
