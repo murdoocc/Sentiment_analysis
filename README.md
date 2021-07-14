@@ -21,17 +21,17 @@ Conocido como un modelo que implementa a la red transformer y agrega la función
 El sistema puede ser compilado de 3 formas según la disposición de la Unidad de Procesamiento Gráfico (GPU) por parte de la computadora:
 
 1. El Sistema web en su toalidad el cual consume tanto la red transformer como bert ajustado:
-[ ] 2GB
-[ ] 4GB
-[x] 8GB
+- [ ] 2GB
+- [ ] 4GB
+- [x] 8GB
 
 3. La red transformer que traduce el idioma de español a ingles:
 - [x] 2GB
 - [ ] 4GB
-- [] 8GB
+- [ ] 8GB
 
 5. El modelo **BERT** afinado para el analisis de sentmientos:
-- [] 2GB
+- [ ] 2GB
 - [x] 4GB
 - [x] 8GB
 
