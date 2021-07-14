@@ -39,7 +39,7 @@ El sistema puede ser compilado de 3 formas según la disposición de la Unidad d
 
 ## Instalación de paquetes
 
-- Principalmente se necesita tener instalado python, de la versión 3.8 en adelante es funcional para todo lo demás. [Instalación de Python] (https://www.python.org/downloads/)
+- Principalmente se necesita tener instalado python, de la versión 3.8 en adelante es funcional para todo lo demás. [Instalación de Python](https://www.python.org/downloads/)
 - Instalar Django es necesario para la cuestión del sistema web, basta con codificar **py -m pip install Django** en la consola para tener Django funcionando.
 - Las dos librerias principales con las cuales podemos trabajar todo lo referente a las redes transformer, bert y demás, es con las siguientes lineas de codigo:
   - pip install keras-transformer
@@ -51,7 +51,7 @@ El sistema puede ser compilado de 3 formas según la disposición de la Unidad d
 
 
 #### **Antes de continuar con el uso del sistema**
-Tanto los modelos entrenados como los conjuntos de datos de entrenamiento y validación son demasiado pesados y exceden el limite de Github, para poder acceder a ellos se deben de descargar a traves del [Drive] (https://drive.google.com/drive/folders/1YETggXq6dmKntJ3zl3eJo1flbcncPB3J?usp=sharing), una vez descargados los archivos deben de ser colocados dentro de la siguiente ruta "sentiment_analysis\primaryapp\dentro de esta carpeta va el archivo."
+Tanto los modelos entrenados como los conjuntos de datos de entrenamiento y validación son demasiado pesados y exceden el limite de Github, para poder acceder a ellos se deben de descargar a traves del [Drive](https://drive.google.com/drive/folders/1YETggXq6dmKntJ3zl3eJo1flbcncPB3J?usp=sharing), una vez descargados los archivos deben de ser colocados dentro de la siguiente ruta "sentiment_analysis\primaryapp\dentro de esta carpeta va el archivo."
 
 
 
