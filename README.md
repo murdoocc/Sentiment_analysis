@@ -16,6 +16,7 @@ Conocido como un modelo que implementa a la red transformer y agrega la función
 * Análisis de emociones
 * Entre otros...
 
+
 ## Requisitos del sistema
 
 El sistema puede ser compilado de 3 formas según la disposición de la Unidad de Procesamiento Gráfico (GPU) por parte de la computadora:
@@ -35,6 +36,7 @@ El sistema puede ser compilado de 3 formas según la disposición de la Unidad d
 - [x] 4GB
 - [x] 8GB
 
+
 ## Instalación de paquetes
 
 - Principalmente se necesita tener instalado python, de la versión 3.8 en adelante es funcional para todo lo demás. [Instalación de Python] (https://www.python.org/downloads/)
@@ -48,10 +50,29 @@ El sistema puede ser compilado de 3 formas según la disposición de la Unidad d
     - pip install pandas
 
 
+### Uso del sistema en su totalidad
+
+Para ello debes de clonar el repositorio completo, si tienes un gestor de codigo como visual estudio puedes abrir la carpeta y abrir una terminal de linea de comandos, de lo contrario solo basta con abrir una linea de comandos y ubicarte en la dirección donde hayas clonado el repositorio
+1. En la linea de comandos iniciaras el servidor de Django con **python manage.py runserver**, antes de ello como es tu primera interacción necesitas cargar las migraciones de los modelos y crear tu super usuario (el super usuario solo es si quieres administrar las entradas de oraciones del sistema):
+   * Para las migraciones (python manage.py makemigrations y python manage.py migrate) **ASEGURATE DE ESTAR EN LA CARPETA DONDE ESTE EL ARCHIVO manage.py antes de ejecutar**
+   * Crear un administrador con python manage.py createsuperuser, sigue los pasos que te muestra en la consola y inicia el servidor con python manage.py runserver
+2. Una vez hayas iniciado el servidor puedes dirigite a dos ventanas, la principal y la del administrador:
+   * http://127.0.0.1:8000/primaryapp/
+   * http://127.0.0.1:8000/admin/
+3. En la ventana principal puedes ver las emociones registradas, y el proposito del sistema, así como un menu en la parte superior izquierda para acceder a las diferentes ventanas:
+   * Ventana "Todos los sentimientos" la primera vez no habrá ningún sentimiento registrado pero hay puedes visualizar una lista de todos los sentimientos registrados, además puedes ver los detalles del sentimiento.
+   * Ventana "Analiza tu sentimiento" te permite interactuar con los modelos para predecir el sentimiento que desees dar como entrada.
+5. Por otro lado si accediste a la dirección de administrador solo necesitar digitar tus credenciales que diste en la creación de tú super usuario.
+   * En este modo podrás hacer una infinidad de funciones, ya que como administrador puedes hacer un CRUD completo de todas las emociones.
+
+Es recomendable que si accedes por primera vez lo hagas como administrador para digitar algunos sentimientos por defecto en tu rol como administrador, de esta manera podras ver reflejados algunos cambios en la pagina principal de manera más sencilla, sobre todo si tu ordenador excede su límite de GPU en la ventana "Analiza tu sentimiento".
 
 
+### Uso de la arquitectura Transformer
+
+Una vez que hayas clonado el repositorio solo debes de acceder a traves de la linea de comandos a la dirección donde se encuentra el archivo "translate.py", ahora con el explodor de archivos ingresa al archivo como si fuera un notepad y donde veas variables con rutas descritas elimina de la ruta "primaryapp/", esto es porque ya no vas a acceder desde el sistema web, si no de manera directa con el archivo. Al finalizar de eliminar esa fracción de la ruta solo necesitas dirigirte a las ultimas 2 lineas de codigo y reemplazar la oración actual por una nueva, compilas el archivo con **python translate.py** y esperas el resultado.
 
 
-
+### Uso del modelo BERT Afinado
 
 
