@@ -40,9 +40,14 @@ El sistema puede ser compilado de 3 formas según la disposición de la Unidad d
 - Principalmente se necesita tener instalado python, de la versión 3.8 en adelante es funcional para todo lo demás. [Instalación de Python] (https://www.python.org/downloads/)
 - Instalar Django es necesario para la cuestión del sistema web, basta con codificar **py -m pip install Django** en la consola para tener Django funcionando.
 - Las dos librerias principales con las cuales podemos trabajar todo lo referente a las redes transformer, bert y demás, es con las siguientes lineas de codigo:
-  -
-  -
-  -
+  - pip install keras-transformer
+  - pip install transformers==3
+  - pip install torch===1.7.1+cu110 torchvision===0.8.2+cu110 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+  - Adicional a las librerias necesarias hay librerias muy utilies independientes del proposito en el codigo de Python:
+    - pip install numpy
+    - pip install pandas
+
+
 
 
 
