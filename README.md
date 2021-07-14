@@ -70,7 +70,7 @@ Es recomendable que si accedes por primera vez lo hagas como administrador para 
 
 ### Uso de la arquitectura Transformer
 
-Una vez que hayas clonado el repositorio solo debes de acceder a traves de la linea de comandos a la dirección donde se encuentra el archivo "translate.py", ahora con el explodor de archivos ingresa al archivo como si fuera un notepad y donde veas variables con rutas descritas elimina de la ruta "primaryapp/", esto es porque ya no vas a acceder desde el sistema web, si no de manera directa con el archivo. Al finalizar de eliminar esa fracción de la ruta solo necesitas dirigirte a las ultimas 2 lineas de codigo y reemplazar la oración actual por una nueva, compilas el archivo con **python translate.py** y esperas el resultado.
+Una vez que hayas clonado el repositorio solo debes de acceder a traves de la linea de comandos a la dirección donde se encuentra el archivo "translate.py", ahora con el explodor de archivos ingresa al archivo como si fuera un notepad y donde veas variables con rutas descritas elimina de la ruta "primaryapp/", esto es porque ya no vas a acceder desde el sistema web, si no de manera directa con el archivo. Al finalizar de eliminar esa fracción de la ruta solo necesitas dirigirte a las ultimas 2 lineas de codigo y reemplazar la oración actual por una nueva, compilas el archivo con **python translate.py** y espera el resultado.
 
 
 ### Uso del modelo BERT Afinado
