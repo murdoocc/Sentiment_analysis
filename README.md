@@ -70,9 +70,28 @@ Es recomendable que si accedes por primera vez lo hagas como administrador para 
 
 ### Uso de la arquitectura Transformer
 
-Una vez que hayas clonado el repositorio solo debes de acceder a traves de la linea de comandos a la dirección donde se encuentra el archivo "translate.py", ahora con el explodor de archivos ingresa al archivo como si fuera un notepad y donde veas variables con rutas descritas elimina de la ruta "primaryapp/", esto es porque ya no vas a acceder desde el sistema web, si no de manera directa con el archivo. Al finalizar de eliminar esa fracción de la ruta solo necesitas dirigirte a las ultimas 2 lineas de codigo y reemplazar la oración actual por una nueva, compilas el archivo con **python translate.py** y espera el resultado.
+Una vez que hayas clonado el repositorio solo debes de acceder a traves de la linea de comandos a la dirección donde se encuentra el archivo "translate.py", ahora con el explodor de archivos ingresa al archivo como si fuera un notepad y donde veas variables con rutas descritas elimina de la ruta "primaryapp/", esto es porque ya no vas a acceder desde el sistema web, si no de manera directa con el archivo. Al finalizar de eliminar esa fracción de la ruta solo necesitas dirigirte a las ultimas 2 líneas de código y reemplazar la oración actual por una nueva, compilas el archivo con **python translate.py** y espera el resultado.
 
 
 ### Uso del modelo BERT Afinado
 
+Al igual que en los casos anteiores, una vez se haya clonado el repositorio debemos de acceder a la misma ruta pero con la intención de acceder al archivo "analisis_sentimientos.py", una vez dentro del archivo debemos de eliminar la misma fracción de cada una de las rutas y dirigirnos a las ultimas 2 líneas de código, **recuerda escribir tu oración en ingles** aunque tambien puedes primero hacer uso de la arquitectura transformer para traducir tu oración a ingles y pegar su resultado en está parte. Compila el archivo y espera su resultado.
 
+
+## Conclusiones
+El bloque de atención es la principal razón de la capacidad de precisión que tienen las redes neuronales actuales, sobre todo las enfocadas en el procesamiento del lenguaje natural, además de ser más efectivas, su funcionamiento interno nos permitió entender cual es la razón de su potencial. Un ejemplo de ello fue su implementación en la traducción de un idioma a otro, logramos reducir costos de procesamiento y en cuestión de un par de horas teníamos una red entrenada con la capacidad de traducir oraciones sencillas de español a inglés. 
+
+BERT como un modelo que implementa el bloque de atención, gracias a su preentrenamiento en una gran cantidad de datos nos permitió de manera eficaz implementar solo una capa adicional para tener un modelo capaz de interpretar dos clases (Sentimiento positivo y sentimiento negativo), con ello observamos que no se necesita una gran cantidad de hardware para conocer acerca de las herramientas implementadas actualmente por empresas tan grandes como los dueños del propio modelo o parecidos.
+
+La implementación de BERT con los datos utilizados fue suficiente para obtener porcentajes de precisión lo suficientemente altos como para estar casi al margen de modelos entrenados con una mayor cantidad de datos, es verdad que entre mayor sea la cantidad de datos mejor será la precisión del modelo, pero el propósito principal de este trabajo fue enseñarte lo mucho que se puede hacer gracias a un uso adecuado del hardware y software disponible tanto física como virtualmente.
+
+El codigo pretende ser muy descriptivo con cada comentario para poder ser comprendido por quien esté interesado en no solo hacer pruebas si no también en empezar a entrar en el mundo del procesamiento del lenguaje natural atraves de estas tecnologías.
+
+### Trabajo futuro
+Elaborar un sistema que tome como base el modelo de BERT así como la arquitectura de las redes transformer para realizar un análisis de sentimientos con mayor cantidad de clases, esto no quiere decir que va a estar enfocado en predecir si el sentimiento puede ser negativo, neutral o positivo, si no que contemplando la gran cantidad de datos actual en el internet generar un set de datos con una cantidad de datos suficientes que contengan un conjunto de problemas y soluciones para con ello entrenar un modelo.
+
+Recolectar los problemas y soluciones proporcionadas por personas que expresan su día a día a través de internet, permite suministrar a un modelo un set de datos que para su evaluación logre encontrar soluciones a nuevos problemas, con esto el modelo no solo te dirá si te sientes bien o mal, al contrario, podrá entender tu sentimiento y decirte algo útil para resolver tu problema.
+
+
+
+###### Nota importante: Si se presenta algún error en el código es por cuestión de versiones ya que todo el tiempo tanto los modelos como las librerias van siendo actualizadas, conforme la migración a dicha actualización se pueda realizar con éxito, todo el código se estará actualizando.
