@@ -50,6 +50,11 @@ El sistema puede ser compilado de 3 formas según la disposición de la Unidad d
     - pip install pandas
 
 
+#### **Antes de continuar con el uso del sistema**
+El modelo BERT y el Conjunto de datos de ingles son demasiado pesados y exceden el limite de Github, para poder acceder a ellos se debe de descargar a traves del [Drive] (https://drive.google.com/drive/folders/1YETggXq6dmKntJ3zl3eJo1flbcncPB3J?usp=sharing), una vez descargados los archivos deben de ser colocados dentro de la siguiente ruta "sentiment_analysis\primaryapp\dentro de esta carpeta va el archivo."
+
+
+
 ### Uso del sistema en su totalidad
 
 Para ello debes de clonar el repositorio completo, si tienes un gestor de codigo como visual estudio puedes abrir la carpeta y abrir una terminal de linea de comandos, de lo contrario solo basta con abrir una linea de comandos y ubicarte en la dirección donde hayas clonado el repositorio
